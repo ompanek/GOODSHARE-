@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>GOODSHARE</title>
+        <meta name="description" content="Znajdź pomoc wśród sąsiadów i dowiedz się co się dzieje w Twojej okolicy">
+        <link rel="stylesheet" href="style.css">
+        <link href='http://fonts.googleapis.com/css?family=Hind+Guntur&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="image.png">
+        <script src="javascript.js"></script>  
+        <script src="http://localhost/chat.html"></script>
+    </head>
+    <body>
+
+        <div id="logo">
+
+            <img id="img1" src="logo2a.png" width="200" height="50" id="sg">
+
+
+
+        </div>
+
+        <div id="wyszukaj">
+            <input type="text" placeholder="Szukaj...">
+            <button><img src="search.png" width="10" height="10"></button>
+        </div>
+
+        <div id="logowanie">
+            
+            <div id="login" class="logreg">
+                <a href="login">Zaloguj</a>
+            </div>
+            <div id="register" class="logreg">
+                <a href="register.html" target="_blank">Rejestracja</a>
+            </div>
+            
+
+
+        </div>
+
+        <div id="profilowe">
+            
+            <div id="prof"><img src="et.jpg" width="100%" height="50%"></div>
+
+            <div id="cytat" width="100%" height="50%">tu znajduje sie motywujacy cytat</div>
+
+
+        </div>
+
+
+
+        <div id="posty" class="chatcontainer">
+        <div class="chatheader">
+            <h3>Welcome<?php echo ucwords($user); ?></h3>
+        </div>
+        <div class="chatmassages"></div>
+        <div class="chatbottom">
+            <form action="#" onsubmit="return false;" id="chatform">
+            <input type="hidden" id="name" value="<?php echo $user; ?>" />
+            <input type="text" name="text" id="text" value="" placeholder="type your chat massage" />
+            <input type="submit" name="submit" value="post" />
+            </form>
+        </div>
+        </div>
+            
+
+
+
+
+        <div id="ustawieniadrobne">
+            <div class="lokmot"><a href="motyw">Motyw strony</a> </div>    
+            <div id="loc" class="lokmot"><a href="lok">Lokalizacja</a> </div>
+        </div>
+
+        <div id="podstrony">
+
+            <div class="str"><a href="Główna">Główna</a></div>
+            <div class="str"><a href="Wiadomości">Wiadomości</a></div>
+            <div class="str"><a href="Zapisane posty">Zapisane posty</a></div>
+            <div class="str"><a href="Twoje posty">Twoje posty</a></div>
+            <div id="not" class="str"><a href="Powiadomienia">Powiadomienia</a></div>
+
+        </div>
+        
+        <div id="przegląd">   
+            tu będą posty
+
+
+        </div>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.1226256232803!2d16.913909415246557!3d52.404453752539105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b3144d77289%3A0x70a2538852ea5e56!2sTowarowa%2041%2F5%2C%2061-896%20Pozna%C5%84!5e0!3m2!1spl!2spl!4v1639148192927!5m2!1spl!2spl" width="100%" height="449px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+        </div>
+
+    </body>
+
+
+
+
+</html>
